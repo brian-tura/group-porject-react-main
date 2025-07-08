@@ -1,0 +1,492 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  color: white;
+}
+
+body {
+  background-color: #1A2730;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* header */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+@media (max-width: 769px) {
+  .navbar .container-fluid {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.navbar {
+  background-color: #424048;
+  padding: 0px;
+}
+
+.logo-design {
+  width: 80px;
+}
+
+.btn-primary-color {
+  background-color: #E95D2C;
+}
+
+.btn-primary-color:hover {
+  background-color: #A63E1B;
+}
+
+@media (min-width: 376px) and (max-width: 426px) {
+  .btn-secondary-color {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+}
+
+.btn-secondary-color {
+  background-color: #45586C;
+}
+
+.btn-secondary-color:hover {
+  background-color: #424048;
+}
+
+.cart-btn {
+  border-color: transparent;
+}
+
+.cart-btn:hover {
+  color: #E95D2C;
+}
+
+
+/* herospace */
+
+.herospace {
+  background-image: url("./assets/herospace.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #1A2730;
+}
+
+@media (max-width: 376px) {
+  .herospace {
+    background-image: none;
+  }
+
+  .col-6.col-override-375 {
+    flex: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 426px) {
+  .col-6.col-override-425 {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .recent-games-w {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .recent-games-w {
+    width: 50%;
+  }
+}
+
+.carousel-inner {
+  border-radius: 10px;
+}
+
+
+/* publisher */
+
+.short-videogame-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* wishlist */
+
+.btn-wish {
+  background-color: #E95D2C !important;
+  border-color: transparent !important;
+}
+
+.btn-primary:hover {
+  background-color: #A63E1B !important;
+}
+
+
+/* ////////////////////////////////////
+////////////SEARCHPAGE////////////// */
+
+.search-form {
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  gap: 15px;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: lab(16.05% -0.2 -0.82);
+  color: #fff;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.search-input::placeholder {
+  color: #6c757d;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 12px #3ed24b;
+}
+
+@media (max-width: 376px) {
+  .btn-search {
+    width: 60%;
+  }
+}
+
+.btn-search {
+  background-color: #E95D2C;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(211, 47, 47, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+.btn-search:hover {
+  background-color: #A63E1B;
+}
+
+.card-instant {
+  max-width: 420px;
+  background: #23272b;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.25), 0 1.5px 4px 0 rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.15s;
+  margin-bottom: 32px;
+  border: none;
+  color: #fff;
+  position: relative;
+  margin: 16px auto;
+}
+
+.card-instant:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.35), 0 10px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card-instant-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.card-instant-body {
+  padding: 18px 22px 16px 22px;
+}
+
+.card-instant-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.card-instant-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #75b3dc;
+  margin-bottom: 10px;
+}
+
+.card-instant-publisher {
+  font-size: 0.9rem;
+  color: #b6b6b6;
+  margin-bottom: 6px;
+}
+
+.card-instant-badges {
+  margin-bottom: 8px;
+}
+
+.badge-genre,
+.badge-platform {
+  display: inline-block;
+  background: #31363b;
+  color: #ffa600;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 3px 10px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+
+.badge-platform {
+  color: #75b3dc;
+  background: #23272b;
+  border: 1px solid #75b3dc;
+}
+
+.global-alert {
+  pointer-events: none;
+}
+
+.scrollable {
+  height: calc(90vh - 106px);
+}
+
+/* add wishlist */
+
+.btn-success,
+.btn-change-success {
+  background-color: #45586C;
+  border: #45586C;
+}
+
+.btn-success:hover {
+  background-color: #424048;
+}
+
+/* /////////////////////////////////
+/////////SELECT-SEARCHPAGE//////// */
+
+.search-sort-form {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.select-group {
+  position: relative;
+  width: 200px;
+}
+
+.select-gaming {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  border: 2px solid #2a2a72;
+  border-radius: 0.75rem;
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  appearance: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(42, 42, 114, 0.15);
+}
+
+.select-gaming:focus {
+  border-color: #00ffe7;
+  box-shadow: 0 0 0 2px #00ffe766;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  pointer-events: none;
+  color: #00ffe7;
+  font-size: 1.5rem;
+  transform: translateY(-50%);
+}
+
+.select-gaming option {
+  color: #222;
+  background: #fff;
+  font-weight: 600;
+}
+
+.select-gaming option:checked {
+  background: #00ffe7;
+  color: #232526;
+}
+
+.select-gaming option {
+  color: #222;
+  background: #fff;
+  font-weight: 600;
+}
+
+
+.select-gaming option:checked {
+  background: #00ffe7;
+  color: #232526;
+}
+
+
+/* cart */
+
+.cart {
+  background-color: #31495a;
+  z-index: 6;
+}
+
+.cart-img {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.cart-img img {
+  border-radius: 10px;
+}
+
+.wishlist-wrapper {
+  position: relative;
+}
+
+@media (max-width: 426px) {
+  .cart-mobile {
+    width: 100%;
+    height: calc(100vh - 70px);
+  }
+
+  .shopping-cart {
+    max-height: calc(100vh - 290px);
+    overflow-y: auto;
+  }
+
+  .cart-total {
+    position: sticky;
+    bottom: 0;
+    background-color: #31495a;
+    padding: 1rem;
+    border-top: 1px solid #fff;
+  }
+}
+
+
+/* Stile di base per la wishlist */
+.wishlist-modal {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  background-color: #45586C;
+  color: white;
+  width: 320px;
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 1050;
+  border-radius: 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.404);
+}
+
+
+/* Mobile: centra al centro dello schermo */
+@media (max-width: 426px) {
+  .wishlist-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-height: 80vh;
+    z-index: 1050;
+  }
+}
+
+
+.total {
+  border-top: 1px solid white;
+  position: fixed;
+  bottom: 10px;
+  background-color: #31495a;
+}
+
+
+/* ////////////////////////////////////
+////////////SALE ITEMS//////////// */
+
+.badge-offer {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(221, 36, 118, 0.15);
+  margin-left: 8px;
+  letter-spacing: 1px;
+  transition: transform 0.2s;
+}
+
+.badge-offer:hover {
+  transform: scale(1.1) rotate(-5deg);
+  box-shadow: 0 4px 16px rgba(221, 36, 118, 0.25);
+}
+
+.wish-counter {
+  right: 390px;
+  top: 25px;
+  border-radius: 50%;
+  width: 1.2%;
+  display: flex;
+  justify-content: center;
+}
+
+/* product page */
+
+.badge-date {
+  display: inline-block;
+  color: #e95e2c;
+  border: 1px solid #e95e2c;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 3px 10px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
+
+.badge-publisher-product {
+  display: inline-block;
+  color: #b0cee2;
+  border: 1px solid #b0cee2;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 12px;
+  padding: 3px 10px;
+  margin-right: 6px;
+  margin-bottom: 4px;
+}
